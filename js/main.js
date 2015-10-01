@@ -403,3 +403,21 @@ function owlInit() {
 $(document).ready(function() {
     owlInit();
 });
+
+//checks to see if they get review question 1 correct
+function quest1yes() {
+    if(errorCounter <= 1) {
+       window.alert("Correct!");
+    } else {
+        window.alert("Incorrect! Please check the number of errors");
+    }
+}
+
+function quest1no() {
+    if(errorCounter > 1) {
+       window.alert("Correct!");
+    } else {
+        window.alert("Incorrect! Please check the number of errors");
+    }
+}
+
