@@ -11,6 +11,7 @@ var gplayer = null;
 
 function loadLocalVideo(videoFile){
     //collapses jumbotron to change video, then expands with new content
+    $("#playVid1").hide();
     $("#slide").animate({right:"-200px"},750);
     $(".jumbotron").animate({height:"50px"},750,function() {
         if (gplayer !== null) {
