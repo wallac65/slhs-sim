@@ -8,10 +8,20 @@ var expandedOptions = 0;
 var pretestProg = [0,0];
 //player object stored here - used to determine if need wipe data or not on video change
 var gplayer = null;
+var hideButtons = true;
+
+if(hideButtons == true) {
+   $("#yes").hide();
+   $("#no").hide();
+}
 
 function loadLocalVideo(videoFile){
     //collapses jumbotron to change video, then expands with new content
-    $("#playVid1").hide();
+    $("#cont").hide();
+    document.getElementById("reviewQuest").innerHTML = "Review Questions"
+    document.getElementById("quest1").innerHTML = "Based on the client's answers, should we move on to the next set?"
+    document.getElementById("yes").innerHTML = "Yes"
+    document.getElementById("no").innerHTML = "No"
     $("#slide").animate({right:"-200px"},750);
     $(".jumbotron").animate({height:"50px"},750,function() {
         if (gplayer !== null) {
