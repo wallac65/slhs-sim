@@ -18,8 +18,9 @@ if(hideButtons == true) {
 function loadLocalVideo(videoFile){
     //collapses jumbotron to change video, then expands with new content
     $("#cont").hide();
-    document.getElementById("reviewQuest").innerHTML = "Review Questions"
-    document.getElementById("quest1").innerHTML = "Based on the client's answers, should we move on to the next set?"
+    document.getElementById("reviewQuest").innerHTML = "Review Questions";
+    document.getElementById("quest1").innerHTML = "Based on the client's answers, should we move on to the next set?";
+    $("#quest1ans").html('<button id="yes" onclick="quest1yes()"></button><button id="no" onclick="quest1no()"></button>');
     document.getElementById("yes").innerHTML = "Yes"
     document.getElementById("no").innerHTML = "No"
     $("#slide").animate({right:"-200px"},750);
