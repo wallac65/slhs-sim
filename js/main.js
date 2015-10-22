@@ -11,10 +11,13 @@ var gplayer = null;
 
 function loadLocalVideo(videoFile){
     //collapses jumbotron to change video, then expands with new content
+<<<<<<< HEAD
     $("#cont").hide();
     document.getElementById("reviewQuest").innerHTML = "Review Questions";
     document.getElementById("quest1").innerHTML = "Based on the client's answers, should we move on to the next set?";
     $("#quest1ans").html('<button id="yes" onclick="quest1yes()"></button><button id="no" onclick="quest1no()"></button>');
+=======
+>>>>>>> parent of 5c7ff3c... Took out unnecessary video placeholders
     $("#slide").animate({right:"-200px"},750);
     $(".jumbotron").animate({height:"50px"},750,function() {
         if (gplayer !== null) {
